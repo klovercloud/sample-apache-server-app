@@ -21,6 +21,7 @@ RUN sed -i -r 's@CustomLog .*@CustomLog /dev/stdout combined@i' /etc/apache2/sit
 EXPOSE 8080
 
 #APP_HOME=/home/klovercloud/app
+# This is the Document Root of Apache Server
 WORKDIR $APP_HOME
 
 USER klovercloud
